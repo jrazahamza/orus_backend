@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const dbURI = "mongodb+srv://Abdulkareem:Miniclip18@cluster0.gh4p7.mongodb.net/orusDB?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://@cluster0.gh4p7.mongodb.net/orusDB?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
@@ -20,7 +20,7 @@ mongoose.connect(dbURI, {
 .catch((err) => console.log("MongoDB connection error: ", err));
 
 
-// mongoose.connect('mongodb+srv://Abdulkareem:Miniclip18@cluster0.gh4p7.mongodb.net/orusDB',
+// mongoose.connect('mongodb+srv://@cluster0.gh4p7.mongodb.net/orusDB',
 //     { useNewUrlParser: true, useUnifiedTopology: true })
 //    .then(() => console.log('MongoDB connected'))
 //    .catch(err => console.error('MongoDB connection error:', err));
